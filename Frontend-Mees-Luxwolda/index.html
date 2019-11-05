@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Foodtrucks</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+
+    <!--Begin van de navigatie-->
+    <header>
+        <nav>
+            <img class="headerimg" src="images/foodtrucktitel.png">
+            <ul class="navigatie">
+                <li> Locatie </li>
+                <li> Diëet</li>
+                <li> Evenementen</li>
+                <li> Keuken</li>
+            </ul>
+        </nav>
+    </header>
+    <!--Eind van de navigatie-->
+
+    <!--Maken van filter sectie CSS regel: 155-->
+
+    <!--Begin van de filter -->
+    <section class="filter">
+
+        <form>
+            <fieldset>
+                <legend>Keuken</legend><br>
+                <input type="checkbox" id="aziatisch" name="soortkeuken">
+                <label for="aziatisch">Aziatisch</label><br />
+
+                <input type="checkbox" id="italiaanse" name="soortkeuken">
+                <label for="italiaanse">Italiaanse</label><br />
+
+                <input type="checkbox" id="griekse" name="soortkeuken">
+                <label for="griekse">Griekse</label><br />
+
+                <input type="checkbox" id="mexicaanse" name="soortkeuken">
+                <label for="mexicaanse">Mexicaanse</label><br />
+
+                <input type="checkbox" id="spaanse" name="soortkeuken">
+                <label for="spaanse">Spaanse</label><br />
+
+                <input type="checkbox" id="nederlandse" name="soortkeuken">
+                <label for="nederlandse">Nederlandse</label><br />
+
+                <input type="checkbox" id="amerikaanse" name="soortkeuken">
+                <label for="amerikaanse">Amerikaanse</label><br />
+            </fieldset>
+
+            <fieldset>
+                <legend>Waardering vanaf</legend><br>
+                <input type="radio" id="1ster" name="waarderingvanaf">
+                <label for="1ster">1 ster</label><br />
+
+                <input type="radio" id="2ster" name="waarderingvanaf">
+                <label for="2ster">2 sterren</label><br />
+
+                <input type="radio" id="3ster" name="waarderingvanaf">
+                <label for="3ster">3 sterren</label><br />
+
+                <input type="radio" id="4ster" name="waarderingvanaf">
+                <label for="4ster">4 sterren</label><br />
+
+                <input type="radio" id="5ster" name="waarderingvanaf">
+                <label for="5ster">5 sterren</label><br />
+            </fieldset>
+
+
+
+            <fieldset>
+                <legend>Al aanwezig</legend><br>
+                <input type="checkbox" id="generator" name="alaanwezig">
+                <label for="generator">Generator</label><br />
+
+                <input type="checkbox" id="stromendwater" name="alaanwezig">
+                <label for="stromendwater">Stromend water</label><br />
+
+                <input type="checkbox" id="personeel" name="alaanwezig">
+                <label for="personeel">Personeel</label><br />
+
+                <input type="checkbox" id="pin" name="alaanwezig">
+                <label for="pin">Pinautomaat</label><br />
+            </fieldset>
+
+            <fieldset>
+                <legend>Zoeken</legend>
+                <input class="zoeken" type="text" placeholder="naar:"><br>
+            </fieldset>
+
+            <fieldset id=formsub>
+                <input type="submit" value="submit">
+            </fieldset>
+
+        </form>
+
+    </section>
+    <!--Eind van filter sectie-->
+
+    <button class="enablefilter">Filter</button>
+
+    <!--Begin van de foodtrucks verzameling op de landingspagina-->
+    <main>
+        <section id="blokken">
+            <a href="detailpagina.html">
+                <article class="blok">
+                    <img src="images/Screen1.png" class="foodtruckimg" />
+                    <p>Tony's Enchilada's</p>
+                </article>
+            </a>
+
+            <a href="detailpagina.html">
+                <article class="blok">
+                    <img src="images/Screen2.png" class="foodtruckimg" />
+                    <p>Microbar</p>
+                </article>
+            </a>
+
+            <a href="detailpagina.html">
+                <article class="blok">
+                    <img src="images/Screen3.png" class="foodtruckimg" />
+                    <p>De Pieper Mobiel</p>
+                </article>
+            </a>
+
+            <a href="detailpagina.html">
+                <article class="blok">
+                    <img src="images/Screen4.png" class="foodtruckimg" />
+                    <p>Johny Doodle</p>
+                </article>
+            </a>
+
+            <a href="detailpagina.html">
+                <article class="blok">
+                    <img src="images/Screen5.png" class="foodtruckimg" />
+                    <p>Homemade Happyness</p>
+                </article>
+            </a>
+        </section>
+
+
+        <section id="blokken">
+            <article class="blok">
+                <img src="images/Screenshot%208.png" class="foodtruckimg" />
+                <p class="foodtrucktekst">Party Poopers</p>
+            </article>
+
+            <article class="blok">
+                <img src="images/Screen7.png" class="foodtruckimg" />
+                <p class="foodtrucktekst">Churro's and More</p>
+            </article>
+
+            <article class="blok">
+                <img src="images/Screenshot%208.png" class="foodtruckimg" />
+                <p class="foodtrucktekst">The Noodle Guys</p>
+            </article>
+
+            <article class="blok">
+                <img src="images/Screenshot%2010.png" class="foodtruckimg" />
+                <p class="foodtrucktekst">Potato Bro's</p>
+            </article>
+
+            <article class="blok">
+                <img src="images/Screen6.png" class="foodtruckimg" />
+                <p class="foodtrucktekst">Swaggalicious</p>
+            </article>
+        </section>
+        <!--Eind van foodtruckverzameling-->
+
+        <footer>
+            <ul id="footer">
+                <li> A Rent a Foodtruck Company </li>
+                <li> Mees Luxwolda</li>
+                <li> © 2019 Foodtrucks.com</li>
+            </ul>
+        </footer>
+    </main>
+
+    <!--Het includen van het interne Javascript bestand-->
+    <script src="JS/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,441 @@
+/* Styling van de Homepage */
+
+/* Alle witruimte wegnemen */
+* {
+    margin: 0;
+}
+
+/* De titel en bovenkant van de pagina's */
+.ftheader {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: #32a89e;
+    width: 100vw;
+    height: 10vh;
+    text-align: center;
+    margin: 0;
+}
+
+/* Het logo */
+.headerimg {
+    width: 8em;
+    height: 2em;
+    padding: .5em
+}
+
+/* De navigatie met daarin de verschillende links */
+nav {
+    background-color: #75ABBC;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    align-content: center;
+    padding-bottom: .5em;
+}
+
+.navigatie {
+    background-color: #75ABBC;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li {
+    padding-left: 2em;
+    padding-right: 2em;
+    color: white;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    transition: .3s;
+    font-family: 'Pacifico', cursive;
+}
+
+/* De animatie voor de navigatie */
+nav ul li:hover {
+    color: black;
+    transform: scale(1.2);
+
+}
+
+/* De Foodtruck imagas met daarbij de bijbehorende tekst styiling */
+#blokken {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fill, auto);
+    overflow: scroll;
+    justify-items: center;
+    flex-direction: row;
+    grid-gap: .5em;
+    margin: .5em;
+    font-family: 'Roboto', sans-serif;
+    transition: .5s;
+}
+
+#blokken img{
+    
+    border-radius: 15px;
+}
+
+.blok {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: #75ABBC;
+    width: 15em;
+    margin: 1em;
+    padding: .75em;
+    height: 16em;
+    border-radius: 15px;
+    transition: .5s;
+}
+
+/* De animatie voor de link naar de detailpagina */
+.blok:hover {
+    transform: scale(1.1);
+    background-color: gainsboro;
+}
+
+.foodtruckimg {
+    width: 14.8em;
+    height: 13em;
+}
+
+.blok p {
+    text-align: center;
+    color: white;
+    margin-top: .5em;
+    text-decoration: none;
+    font-family: 'Pacifico', cursive;
+    
+}
+
+
+/* Styling van de Detailpagina */
+
+/* Het team deel */
+
+#fotolijst {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fill, auto);
+    overflow: scroll;
+    justify-items: center;
+    flex-direction: row;
+    grid-gap: 3em;
+    margin: .5em;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#fotolijst img {
+    width: 5em;
+    transition: .2s;
+    margin-top: 1em;
+}
+
+#fotolijst img:hover {
+    transform: scale(1.2)
+}
+
+#fotolijst h1 {
+    margin-top: 1.5em;
+    margin-left: 1em;
+    font-family: 'Pacifico', cursive;
+
+}
+
+#fotolijst p {
+    color: black;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+
+#fotolijst article {
+    width: 8e
+}
+
+/* Info over de foodtruck */
+#infoblok {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fill, auto);
+    overflow: scroll;
+    justify-items: center;
+    flex-direction: row;
+    grid-gap: 3em;
+    margin: .5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+#infoblok article {
+    font-family: 'Roboto', sans-serif;
+    background-color: #75ABBC;
+    width: 15em;
+    margin: 2em;
+    margin-bottom: 1em;
+    padding: .5em;
+    height: 22em;
+    transition: .5s;
+    border-radius: 15px;
+}
+
+#infoblok article:hover {
+
+    transform: scale(1.05);
+    background-color: black;
+}
+
+#infoblok p {
+
+    text-align: center;
+}
+
+
+article h2 {
+    font-family: 'Pacifico', cursive;
+    color: white;
+    text-align: center;
+}
+
+article li {
+    width: 15em;
+    margin-left: -3em;
+}
+
+
+#infoblok p {
+    text-align: center;
+    padding: 1.5em;
+    color: white;
+}
+
+/* Alle decoraties voor de linkjes wegnemen */
+
+a {
+    text-decoration: none;
+}
+
+
+#onderschrift {
+    color: white;
+    margin: 1.5em;
+    margin-bottom: 1em;
+}
+
+#onderschrift li {
+    text-align: left;
+    list-style-type: none;
+}
+
+
+.menukop {
+    font-family: 'Pacifico', cursive;
+    margin-top: -.6em;
+}
+
+.menukop2 {
+    font-family: 'Pacifico', cursive;
+    margin-top: -1em;
+}
+
+article ul {
+    margin-top: -1em;
+}
+
+hr {
+    margin: .1em;
+    margin-top: .5em;
+    height: .15em;
+    color: white;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+#foodtruckimgs {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fill, auto);
+    overflow: scroll;
+    justify-items: center;
+    flex-direction: row;
+    grid-gap: 2em;
+    margin: .5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+#foodtruckimgs article {
+
+    background-color: #75ABBC;
+    width: 18em;
+    align-items: center;
+    border-radius: 15px;
+    margin-top: 2em;
+    transition: .2s;
+}
+
+#foodtruckimgs article:hover {
+
+    transform: scale(1.1);
+    background-color: gainsboro;
+}
+
+
+#foodtruckimgs img {
+
+    width: 16em;
+    margin-top: 2em;
+    border-radius: 15px;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    padding: 0em;
+}
+
+
+#foodtruckimgs h2 {
+    font-family: 'Pacifico', cursive;
+    margin-top: -.8em;
+}
+
+#foodtruckimgs p {
+    font-family: 'Roboto', sans-serif;
+    margin: 1em;
+    margin-top: -.05em;
+    text-align: center;
+    color: white;
+}
+
+/* Styling van de Homepage */
+
+/* Filter in de Landingspagina begint hier */
+.filter {
+    display: none;
+}
+
+/* Filter actief class */
+.filter-active {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Filter knop styling */
+.enablefilter {
+    background-color: #75ABBC;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 1em;
+    margin-left: 2em;
+    transition: .2s;
+    font-family: 'Pacifico', cursive;
+}
+
+.enablefilter:hover {
+    transform: scale(1.1);
+    background-color: gainsboro;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+fieldset {
+    margin: 2em;
+    padding: 1em;
+    width: 10em;
+    background-color: gainsboro;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    transition: .2s;
+}
+
+form legend {
+    font-family: 'Pacifico', cursive;
+    margin-bottom: -1.6em;
+}
+
+input {
+    font-size: 1em;
+    padding: 1em;
+    background-color: #75ABBC;
+    border-radius: 4px;
+    transition: .2s;
+}
+
+input:focus {
+    outline:5px solid #75ABBC;
+    color:#75ABBC;
+}
+
+fieldset:hover {
+    transform: scale(1.1);
+}
+
+.zoeken {
+    margin-top: 1.3em;
+    height: 1em;
+    width: 2.1em;
+    transition: .5s;
+    border: none;
+}
+
+.zoeken:focus {
+    height: 1em;
+    width: 7.5em;
+    background-color: white;
+}
+
+.zoeken:hover {
+    background-color: ghostwhite;
+}
+
+#formsub {
+    width: 1em;
+}
+
+#formsub input {
+    transition: .2s;
+    font-family: 'Pacifico', cursive;
+}
+
+#formsub input:hover {
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+}
+
+#footer {
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    align-content: center;
+    padding: .5em;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 2em;
+}
+
+#footer li {
+    margin: 1em;
+}
